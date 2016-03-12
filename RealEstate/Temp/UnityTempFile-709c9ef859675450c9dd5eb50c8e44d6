@@ -115,7 +115,6 @@
 'Assets/OVR_UI/Scripts/OVRRayPointerEventData.cs'
 'Assets/OVR_UI/Scripts/OVRRaycaster.cs'
 'Assets/OVR_UI/Scripts/ParticleGazeCursor.cs'
-'Assets/Scripts/Destroyable.cs'
 'Assets/Scripts/NavigationController.cs'
 'Assets/SplineController/MathUtils.cs'
 'Assets/SplineController/SplineController.cs'
