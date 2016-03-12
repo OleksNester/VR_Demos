@@ -135,4 +135,8 @@ public class SplineController : MonoBehaviour
 			mSplineInterp.StartInterpolation(null, true, WrapMode);
 		}
 	}
+
+	public void SetTransforms(Transform[] transforms) {
+		mTransforms = transforms;
+	}
 }
