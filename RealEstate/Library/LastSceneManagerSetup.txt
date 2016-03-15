@@ -1,4 +1,0 @@
-sceneSetups:
-- path: Assets/hazelwoodloft/All_Scenes/room_04_terrace_day.unity
-  isLoaded: 1
-  isActive: 1
