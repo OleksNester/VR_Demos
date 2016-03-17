@@ -15,8 +15,10 @@ public class StartMenu : MonoBehaviour {
 	}
 
 	public void LoadScene(string sceneName) {
-		SceneManager.LoadScene (sceneName);
-		Scene scene = SceneManager.GetSceneByName(sceneName);
-		SceneManager.SetActiveScene(scene);
+		Scene oldScene = SceneManager.GetActiveScene ();
+		SceneManager.LoadScene(sceneName);
+		Scene newScene = SceneManager.GetSceneByName(sceneName);
+		SceneManager.SetActiveScene(newScene);
+		SceneManager.UnloadScene(oldScene.buildIndex);
 	}
 }
