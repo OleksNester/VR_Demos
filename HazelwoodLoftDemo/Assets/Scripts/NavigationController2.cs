@@ -5,15 +5,16 @@ public class NavigationController2 : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		if (AutoStart) {
+		/*if (AutoStart) {
 			MoveTowards (MovemmediatelyTo);
-		}
+		}*/
 	}
 
-	public bool AutoStart;
+	/* public bool AutoStart;
 	public Transform MovemmediatelyTo;
+	*/
 
-	public float Speed;
+	public float Speed = 2;
 	private Transform target;
 	private bool start = false;
 
@@ -31,13 +32,4 @@ public class NavigationController2 : MonoBehaviour {
 			}
 		}
 	}
-
-	/*
-public Transform target;
-    public float speed;
-    void Update() {
-        float step = speed * Time.deltaTime;
-        transform.position = Vector3.MoveTowards(transform.position, target.position, step);
-    }
-	*/
 }
