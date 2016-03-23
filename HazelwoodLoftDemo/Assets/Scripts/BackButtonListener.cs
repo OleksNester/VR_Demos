@@ -17,11 +17,15 @@ public class BackButtonListener : MonoBehaviour {
 
 		if(back)
 		{
-			Scene oldScene = SceneManager.GetActiveScene ();
-			SceneManager.LoadScene(BackToScene);
-			Scene newScene = SceneManager.GetSceneByName(BackToScene);
-			SceneManager.SetActiveScene(newScene);
-			SceneManager.UnloadScene(oldScene.buildIndex);
+			if (BackToScene != null && !"".Equals(BackToScene)) {
+				Scene oldScene = SceneManager.GetActiveScene ();
+				SceneManager.LoadScene (BackToScene);
+				Scene newScene = SceneManager.GetSceneByName (BackToScene);
+				SceneManager.SetActiveScene (newScene);
+				SceneManager.UnloadScene (oldScene.buildIndex);
+			} else {
+				Application.Quit ();
+			}
 		}
 	}
 
